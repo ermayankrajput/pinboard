@@ -5,6 +5,10 @@ class PinsController < ApplicationController
 
 		@pins = Pin.all.order("created_at DESC")
 	end
+	def profile
+		@pins = Pin.all.order("created_at DESC")
+
+	end
 	def show
 	end
 
